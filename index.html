@@ -164,31 +164,47 @@
         }
       }
 
-      @media (max-width: 480px) {
+      @media (max-width: 768px) {
+        header {
+          height: 100vh;
+          background-position: center center;
+          flex-direction: column;
+        }
+
         header h1 {
-          font-size: 2rem;
+          font-size: 2.2rem;
+          top: auto;
+          position: relative;
           padding: 0 1rem;
         }
 
-        nav {
-          padding: 0.7rem;
+        header p {
+          font-size: 1.5rem;
+          text-align: center;
         }
 
         nav a {
-          font-size: 0.85rem;
+          display: inline-block;
+          margin: 0.5rem 0.5rem;
+          font-size: 0.9rem;
         }
 
         .galeria {
           grid-template-columns: 1fr 1fr;
-          gap: 0.7rem;
+          gap: 0.5rem;
+          height: auto;
         }
 
         .galeria a img {
-          height: 130px;
+          height: 160px;
         }
 
         section {
           padding: 2rem 1rem;
+        }
+
+        .frases {
+          font-size: 1rem;
         }
       }
     </style>
@@ -196,7 +212,14 @@
   <body>
     <header>
       <h1>Para Minha Alma Gêmea, Taty.✨</h1>
-      <p>"Amar você é como viver um sonho acordado, onde cada detalhe do seu jeito me encanta mais a cada dia. Você é a poesia que eu sempre procurei nas páginas da vida, o abraço que acalma minhas tempestades e o sorriso que dá sentido a todos os meus dias. Se eu tivesse que recomeçar mil vezes, escolheria você em cada uma delas, sem hesitar, porque você é meu destino, meu lar e meu eterno amor.</p>
+      <p>
+        "Amar você é como viver um sonho acordado, onde cada detalhe do seu
+        jeito me encanta mais a cada dia. Você é a poesia que eu sempre procurei
+        nas páginas da vida, o abraço que acalma minhas tempestades e o sorriso
+        que dá sentido a todos os meus dias. Se eu tivesse que recomeçar mil
+        vezes, escolheria você em cada uma delas, sem hesitar, porque você é meu
+        destino, meu lar e meu eterno amor.
+      </p>
     </header>
 
     <nav>
@@ -208,33 +231,38 @@
     <section id="sobre">
       <h2>Nosso Amor</h2>
       <p>
-       "Nosso amor é uma jornada sem fim escrita pelas mãos do destino, onde cada momento vivido é uma página repleta de carinho, cumplicidade e superação, um sentimento que nasceu do acaso, cresceu com o tempo, floresceu com o respeito e hoje é a prova viva de que duas almas, quando destinadas, se reconhecem mesmo em meio ao caos e constroem, juntas, um universo onde só existe espaço para a paz, o afeto e o eterno."
+        "Nosso amor é uma jornada sem fim escrita pelas mãos do destino, onde
+        cada momento vivido é uma página repleta de carinho, cumplicidade e
+        superação, um sentimento que nasceu do acaso, cresceu com o tempo,
+        floresceu com o respeito e hoje é a prova viva de que duas almas, quando
+        destinadas, se reconhecem mesmo em meio ao caos e constroem, juntas, um
+        universo onde só existe espaço para a paz, o afeto e o eterno."
       </p>
     </section>
 
     <section id="galeria">
       <h2>Nossas Memórias</h2>
       <div class="galeria">
-        <a href="img1.jpg" data-lightbox="galeria"
-          ><img src="img1.jpg" alt="Foto 1"
+        <a href="images/img1.jpg" data-lightbox="galeria"
+          ><img src="images/img1.jpg" alt="Foto 1"
         /></a>
-        <a href="img2.jpg" data-lightbox="galeria"
-          ><img src="img2.jpg" alt="Foto 2"
+        <a href="images/img2.jpg" data-lightbox="galeria"
+          ><img src="images/img2.jpg" alt="Foto 2"
         /></a>
-        <a href="img3.jpg" data-lightbox="galeria"
-          ><img src="img3.jpg" alt="Foto 3"
+        <a href="images/img3.jpg" data-lightbox="galeria"
+          ><img src="images/img3.jpg" alt="Foto 3"
         /></a>
-        <a href="img4.jpg" data-lightbox="galeria"
-          ><img src="img4.jpg" alt="Foto 4"
+        <a href="images/img4.jpg" data-lightbox="galeria"
+          ><img src="images/img4.jpg" alt="Foto 4"
         /></a>
-        <a href="img5.jpg" data-lightbox="galeria"
-          ><img src="img5.jpg" alt="Foto 5"
+        <a href="images/img5.jpg" data-lightbox="galeria"
+          ><img src="images/img5.jpg" alt="Foto 5"
         /></a>
-        <a href="img6.jpg" data-lightbox="galeria"
-          ><img src="img6.jpg" alt="Foto 6"
+        <a href="images/img6.jpg" data-lightbox="galeria"
+          ><img src="images/img6.jpg" alt="Foto 6"
         /></a>
-        <a href="img7.jpg" data-lightbox="galeria"
-          ><img src="img7.jpg" alt="Foto 7"
+        <a href="images/img7.jpg" data-lightbox="galeria"
+          ><img src="images/img7.jpg" alt="Foto 7"
         /></a>
       </div>
     </section>
