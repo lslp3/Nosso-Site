@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Amor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #fff0f5;
+        color: #333;
+      }
+      header {
+        height: 160vh;
+        background: url("images/img1.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
+      header p {
+        font-family: "Great Vibes", cursive;
+        font-size: 2.5rem;
+        color: #18e4fb;
+        z-index: 1;
+      }
+      header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      header h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 3.5rem;
+        color: white;
+        z-index: 1;
+        padding: 1rem;
+        position: absolute;
+        top: 30%;
+      }
+
+      nav {
+        background: #ff69b4;
+        padding: 1rem;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      nav a {
+        color: white;
+        margin: 0 0.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 3rem 1rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #c71585;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .galeria a img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 1rem;
+        transition: transform 0.3s;
+      }
+
+      .galeria a img:hover {
+        transform: scale(1.05);
+      }
+
+      .frases p {
+        color: #8b0000;
+        margin: 1rem 0;
+        font-size: 1.1rem;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.5rem;
+          top: 30%;
+        }
+
+        nav a {
+          display: inline-block;
+          margin: 0.3rem 0.5rem;
+          font-size: 0.95rem;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        .galeria a img {
+          height: 150px;
+        }
+
+        p,
+        .frases p {
+          font-size: 1rem;
+          padding: 0 0.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 2rem;
+          padding: 0 1rem;
+        }
+
+        nav {
+          padding: 0.7rem;
+        }
+
+        nav a {
+          font-size: 0.85rem;
+        }
+
+        .galeria {
+          grid-template-columns: 1fr 1fr;
+          gap: 0.7rem;
+        }
+
+        .galeria a img {
+          height: 130px;
+        }
+
+        section {
+          padding: 2rem 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Para Minha Alma Gêmea, Taty.✨</h1>
+      <p>"Amar você é como viver um sonho acordado, onde cada detalhe do seu jeito me encanta mais a cada dia. Você é a poesia que eu sempre procurei nas páginas da vida, o abraço que acalma minhas tempestades e o sorriso que dá sentido a todos os meus dias. Se eu tivesse que recomeçar mil vezes, escolheria você em cada uma delas, sem hesitar, porque você é meu destino, meu lar e meu eterno amor.</p>
+    </header>
+
+    <nav>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#frases">Frases</a>
+    </nav>
+
+    <section id="sobre">
+      <h2>Nosso Amor</h2>
+      <p>
+       "Nosso amor é uma jornada sem fim escrita pelas mãos do destino, onde cada momento vivido é uma página repleta de carinho, cumplicidade e superação, um sentimento que nasceu do acaso, cresceu com o tempo, floresceu com o respeito e hoje é a prova viva de que duas almas, quando destinadas, se reconhecem mesmo em meio ao caos e constroem, juntas, um universo onde só existe espaço para a paz, o afeto e o eterno."
+      </p>
+    </section>
+
+    <section id="galeria">
+      <h2>Nossas Memórias</h2>
+      <div class="galeria">
+        <a href="images/img1.jpg" data-lightbox="galeria"
+          ><img src="images/img1.jpg" alt="Foto 1"
+        /></a>
+        <a href="images/img2.jpg" data-lightbox="galeria"
+          ><img src="images/img2.jpg" alt="Foto 2"
+        /></a>
+        <a href="images/img3.jpg" data-lightbox="galeria"
+          ><img src="images/img3.jpg" alt="Foto 3"
+        /></a>
+        <a href="images/img4.jpg" data-lightbox="galeria"
+          ><img src="images/img4.jpg" alt="Foto 4"
+        /></a>
+        <a href="images/img5.jpg" data-lightbox="galeria"
+          ><img src="images/img5.jpg" alt="Foto 5"
+        /></a>
+        <a href="images/img6.jpg" data-lightbox="galeria"
+          ><img src="images/img6.jpg" alt="Foto 6"
+        /></a>
+        <a href="images/img7.jpg" data-lightbox="galeria"
+          ><img src="images/img7.jpg" alt="Foto 7"
+        /></a>
+      </div>
+    </section>
+
+    <section id="frases">
+      <h2>Palavras do Coração</h2>
+      <div class="frases">
+        <p>
+          "Desde que você entrou na minha vida, tudo ganhou cor, sentido e
+          direção. O som da sua voz é a melodia que acalma meu coração, e o seu
+          abraço é o lugar onde eu gostaria de morar para sempre. Amar você é
+          como respirar: natural, vital e eterno."
+        </p>
+
+        <p>
+          "Você é meu amanhecer mais bonito, meu refúgio nos dias difíceis e meu
+          sorriso nos momentos mais simples. Ao seu lado, descobri que o amor
+          verdadeiro existe — aquele que não precisa de promessas para durar,
+          apenas de presença, carinho e alma entrelaçada."
+        </p>
+
+        <p>
+          "Nos teus olhos encontrei meu lar, no teu toque encontrei paz, e no
+          teu amor encontrei tudo o que procurei por toda minha vida. Não há
+          distância, tempo ou obstáculo que seja maior do que o que sinto por
+          você. Com você, o sempre não é suficiente."
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Feito com muito amor para você minha esposa linda 💑 Assinado: Laercio
+        S.❤️
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  </body>
+</html>
