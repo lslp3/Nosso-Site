@@ -23,10 +23,11 @@
         font-family: "Poppins", sans-serif;
         background: #fff0f5;
         color: #333;
+        overflow-x: hidden;
       }
       header {
         height: 160vh;
-        background: url("img1.jpg") center/cover no-repeat;
+        background: url("images/img1.jpg") center/cover no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -197,7 +198,6 @@
         }
 
         .galeria a img {
-          width: 160px;
           height: 160px;
         }
 
@@ -208,6 +208,81 @@
         .frases {
           font-size: 1rem;
         }
+      }
+
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .video-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .video-card:hover {
+        transform: scale(1.03);
+      }
+
+      .thumbnail {
+        width: 100%;
+        display: block;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card-content h2 {
+        font-size: 16px;
+        margin: 0 0 10px;
+      }
+
+      .card-content p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      /* Modal */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+      }
+
+      .modal-content {
+        position: relative;
+        margin: 5% auto;
+        background: #000;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .modal video {
+        width: 100%;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 28px;
+        color: #fff;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -245,29 +320,35 @@
     <section id="galeria">
       <h2>Nossas Memórias</h2>
       <div class="galeria">
-        <a href="img1.jpg" data-lightbox="galeria"
-          ><img src="img1.jpg" alt="Foto 1"
+        <a href="images/img1.jpg" data-lightbox="galeria"
+          ><img src="images/img1.jpg" alt="Foto 1"
         /></a>
-        <a href="img2.jpg" data-lightbox="galeria"
-          ><img src="img2.jpg" alt="Foto 2"
+        <a href="images/img2.jpg" data-lightbox="galeria"
+          ><img src="images/img2.jpg" alt="Foto 2"
         /></a>
-        <a href="img3.jpg" data-lightbox="galeria"
-          ><img src="img3.jpg" alt="Foto 3"
+        <a href="images/img3.jpg" data-lightbox="galeria"
+          ><img src="images/img3.jpg" alt="Foto 3"
         /></a>
-        <a href="img4.jpg" data-lightbox="galeria"
-          ><img src="img4.jpg" alt="Foto 4"
+        <a href="images/img4.jpg" data-lightbox="galeria"
+          ><img src="images/img4.jpg" alt="Foto 4"
         /></a>
-        <a href="img5.jpg" data-lightbox="galeria"
-          ><img src="img5.jpg" alt="Foto 5"
+        <a href="images/img5.jpg" data-lightbox="galeria"
+          ><img src="images/img5.jpg" alt="Foto 5"
         /></a>
-        <a href="img6.jpg" data-lightbox="galeria"
-          ><img src="img6.jpg" alt="Foto 6"
+        <a href="images/img6.jpg" data-lightbox="galeria"
+          ><img src="images/img6.jpg" alt="Foto 6"
         /></a>
-        <a href="img7.jpg" data-lightbox="galeria"
-          ><img src="img7.jpg" alt="Foto 7"
+        <a href="images/img7.jpg" data-lightbox="galeria"
+          ><img src="images/img7.jpg" alt="Foto 7"
         /></a>
       </div>
     </section>
+    <!-- Container onde os cards serão inseridos -->
+    <div class="cards-container" id="cardsContainer"></div>
+
+  <!-- Contêiner onde o vídeo fullscreen será injetado -->
+  <div id="fullscreenContainer" style="display: none;"></div>
+    </div>
 
     <section id="frases">
       <h2>Palavras do Coração</h2>
@@ -302,6 +383,6 @@
       </p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
