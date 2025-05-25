@@ -1,19 +1,19 @@
 const videos = [
   {
-    title: "Vídeo 1",
-    description: "Primeiro vídeo local.",
+    title: "Rolê de MT07",
+    description: "Primeiro vídeo andando na MT07.",
     file: "video1.mp4",
     thumb: "img8.jpg"
   },
   {
-    title: "Vídeo 2",
-    description: "Segundo vídeo interessante.",
+    title: "Rolê com o Esposo de MT07",
+    description: "Rolêzinho de Casal👫",
     file: "video2.mp4",
     thumb: "img9.jpg"
   },
   {
-    title: "Vídeo 3",
-    description: "Mais um vídeo para assistir.",
+    title: "Andando na MT03",
+    description: "Rolêzinho de MT03",
     file: "video3.mp4",
     thumb: "img10.jpg"
   }
