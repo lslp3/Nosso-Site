@@ -1,21 +1,21 @@
 const videos = [
   {
-    title: "Rolê de MT07",
-    description: "Primeiro vídeo andando na MT07.",
+    title: "Vídeo 1",
+    description: "Primeiro vídeo local.",
     file: "video1.mp4",
-    thumb: "img8.jpg"
+    thumb: "images/img8.jpg"
   },
   {
-    title: "Rolê com o Esposo de MT07",
-    description: "Rolêzinho de Casal👫",
+    title: "Vídeo 2",
+    description: "Segundo vídeo interessante.",
     file: "video2.mp4",
-    thumb: "img9.jpg"
+    thumb: "images/img9.jpg"
   },
   {
-    title: "Andando na MT03",
-    description: "Rolêzinho de MT03",
+    title: "Vídeo 3",
+    description: "Mais um vídeo para assistir.",
     file: "video3.mp4",
-    thumb: "img10.jpg"
+    thumb: "images/img10.jpg"
   }
 ];
 
@@ -73,3 +73,41 @@ container.addEventListener("click", function (e) {
     });
   }
 });
+
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+  let currentSlide = 0;
+
+  const showSlide = (index) => {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      dots[i].classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+  };
+
+  const nextSlide = () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  };
+
+  const prevSlide = () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  };
+
+  document.querySelector(".next").addEventListener("click", nextSlide);
+  document.querySelector(".prev").addEventListener("click", prevSlide);
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      currentSlide = i;
+      showSlide(currentSlide);
+    });
+  });
+
+  // Slide automático
+  setInterval(nextSlide, 3000);
+
