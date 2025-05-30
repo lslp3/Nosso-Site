@@ -3,19 +3,19 @@ const videos = [
     title: "Vídeo 1",
     description: "Primeiro vídeo local.",
     file: "video1.mp4",
-    thumb: "images/img8.jpg"
+    thumb: "img8.jpg"
   },
   {
     title: "Vídeo 2",
     description: "Segundo vídeo interessante.",
     file: "video2.mp4",
-    thumb: "images/img9.jpg"
+    thumb: "img9.jpg"
   },
   {
     title: "Vídeo 3",
     description: "Mais um vídeo para assistir.",
     file: "video3.mp4",
-    thumb: "images/img10.jpg"
+    thumb: "img10.jpg"
   }
 ];
 
